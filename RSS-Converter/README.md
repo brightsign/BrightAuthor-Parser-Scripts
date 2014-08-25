@@ -1,16 +1,16 @@
 Overview
 -------------
-<p>By default, when displaying an RSS feed in a Live Text state, you cannot use index numbers to choose which feed item(s) to display. This plug-in converts a standard RSS feed into the same format as a BSN Live Text feed, allowing you to display RSS feed items by index number.</p>
+<p>By default, when displaying an RSS feed in a Live Text state, you cannot use index numbers to choose which feed item(s) to display. This parser script converts a standard RSS feed into the same format as a BSN Live Text feed, allowing you to display RSS feed items by index number.</p>
 
-Adding the RSS Feed and Plug-In
+Adding the RSS Feed and Parser Script
 --------------------------------------------
-<p>First, you will need to add your RSS feed and plug-in script to the presentation.</p>
+<p>First, you will need to add your RSS feed and parser script to the presentation.</p>
 <ol>
 <li>In BrightAuthor, navigate to the <strong>File > Presentation properties</strong> window. Select the <strong>Data Feeds</strong> tab and click the <strong>Add Data Feed</strong> button.</li>
 <li>Enter a <strong>Feed name</strong> for the Data Feed.</li>
 <li>In the </strong>Feed Specification</strong> field, select <strong>URL</strong> and enter the address of the desired RSS feed.</li>
 <li>Choose an <strong>Update Interval</strong>. This will determine how often the player will refresh the Live Text state using the feed.</li>
-<li>Use the <strong>Browse</strong> button to locate and select the “rssconverter.brs” plug-in script.</li>
+<li>Use the <strong>Browse</strong> button to locate and select the “rssconverter.brs” script.</li>
 <li>Enter “rss” into the <strong>Parser Function Name</strong> field.</li>
 <li>Click <strong>OK.</strong></li>
 </ol>
