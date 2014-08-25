@@ -3,15 +3,15 @@ Overview
 <p>If you choose to display Live Text Data in a Live Text state, you can only display item descriptions, not item titles. This parser script allows you to display both the title and description of an item in a Live Text State.</p>
 <p><strong>Note</strong>: <em>This plug-in only works with the Live Text Feed feature on the BrightSign Network.</em></p>
 
-Adding the Data Feed and Plug-In to your Presentation
+Adding the Data Feed and Parser to your Presentation
 ---------------------------------------------------
-<p>First, you will need to add your BSN Data Feed and plug-in script to the presentation.</p>
+<p>First, you will need to add your BSN Data Feed and parser script to the presentation.</p>
 <ol>
 <li>In BrightAuthor, navigate to the <strong>File > Presentation Properties </strong>window. Select the <strong>Data Feeds</strong> tab and click the <strong>Add Data Feed</strong> button.</li>
 <li>Enter a <strong>Feed</strong> name for the Data Feed.</li>
 <li>In the <strong>Feed Specification</strong> field, select <strong>Live Data Feed</strong> and choose a feed you created in BrightAuthor or on the BrightSign Network.</li>
 <li>Choose an <strong>Update Interval</strong>. This will determine how often the player will refresh the Live Text Data.</li>
-<li>Use the <strong>Browse</strong> button to locate and select the “livetextboth.brs” plug-in script.</li>
+<li>Use the <strong>Browse</strong> button to locate and select the “livetextboth.brs” script.</li>
 <li>Enter “livetextboth” into the <strong>Parser Function Name</strong> field.</li>
 <li>Click <strong>OK</strong>.</li>
 </ol>
