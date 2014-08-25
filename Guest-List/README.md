@@ -1,6 +1,6 @@
 Overview
 --------
-<p>This plug-in allows you to display a dynamic, numbered list of first and last names. This list can be remotely updated by editing a publicly accessible XML file. </p>
+<p>This parser script allows you to display a dynamic, numbered list of first and last names. This list can be remotely updated by editing a publicly accessible XML file. </p>
 
 Creating a List of Names
 ------------------------
@@ -19,15 +19,15 @@ Hosting the XML Document
 ------------------------
 <p>You will need to make the “list.xml” document publicly available on the Internet so your networked player(s) can freely retrieve the list data. If you don’t have your own servers to host the XML document, you can also use a free Dropbox account: Please see <a href ="http://support.brightsign.biz/entries/21003508-Can-I-use-a-Dropbox-account-with-my-BrightSign">this FAQ</a> to learn more about publicly hosting files with Dropbox.</p>
 
-Adding the Data Feed and Plug-In to your Presentation
+Adding the Data Feed and Parser Script to your Presentation
 ------------------------------------------------------
-<p>Next, you will need to add the plug-in script to the presentation and specify how often the player will contact the server to update the content of the list.</p>
+<p>Next, you will need to add the parser script to the presentation and specify how often the player will contact the server to update the content of the list.</p>
 <ol>
 <li>In BrightAuthor, navigate to the <strong>File > Presentation properties</strong> window. Select the <strong>Data Feeds</strong> tab and click the <strong>Add Data Feed</strong> button.</li>
 <li>Enter a <strong>Feed name</strong> for the Data Feed (e.g. “Guest List”).</li>
 <li>Enter the URL of your hosted XML document in the <strong>Feed Specification</strong> field.</li>
 <li>Choose an <strong>Update Interval</strong>. This will determine how often the player will refresh the guest list using the hosted XML document.</li>
-<li>Use the <strong>Browse</strong> button to locate and select the “list.brs” plug-in script.</li>
+<li>Use the <strong>Browse</strong> button to locate and select the “list.brs”script.</li>
 <li>Enter “list” into the <strong>Parser Function Name</strong> field.</li>
 <li>Click <strong>OK</strong>.</li>
 </ol>
@@ -53,7 +53,7 @@ Creating a Live Text State
 <p> </p>
 *Editing the .brs script*
 <ol>
-<li>Open the “list.brs” plug-in file using a text editor program (Notepad, TextMate, etc.).</li>
+<li>Open the “list.brs” file using a text editor program (Notepad, TextMate, etc.).</li>
 <li>Locate the line that states <code>itemsbyindex[count]=str(count+1)…</code></li>
 <li>Add the following to the end of the line: <code>“+”, ”+item.jobtitle.GetText()”</code>. The first plus sign will add a comma and space after the last name. The second plus sign will add the “jobtitle” attribute to each list item.</li>
 <li>Remove the following text from the line: <code>“str(count+1)+”. ”+”</code>. Doing this will remove both the number and the period after the number from the beginning of each list item.</li>
